@@ -39,8 +39,8 @@
     </properties>
 
     <scm>
-        <connection>scm:git:git@github.com:podile/cassandra-exporter.git</connection>
-        <developerConnection>scm:git:git@github.com/podile/cassandra-exporter.git</developerConnection>
+        <connection>scm:git:git://github.com/podile/cassandra-exporter.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:podile/cassandra-exporter.git</developerConnection>
         <url>git://github.com/podile/cassandra-exporter.git</url>
         <tag>v0.9.11</tag>
     </scm>
