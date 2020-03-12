@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.zegelin.cassandra-exporter</groupId>
+        <groupId>com.podile.cassandra-exporter</groupId>
         <artifactId>exporter-parent</artifactId>
         <version>0.9.11-SNAPSHOT</version>
     </parent>
@@ -23,8 +23,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.zegelin.cassandra-exporter</groupId>
+            <groupId>com.podile.cassandra-exporter</groupId>
             <artifactId>common</artifactId>
+            <version>0.9.11-SNAPSHOT</version>
         </dependency>
 
         <dependency>
