@@ -3,7 +3,7 @@
 
     <groupId>com.podile.cassandra-exporter</groupId>
     <artifactId>exporter-parent</artifactId>
-    <version>0.9.11</version>
+    <version>0.9.11-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Cassandra Exporter Parent</name>
