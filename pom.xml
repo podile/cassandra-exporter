@@ -1,12 +1,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.zegelin.cassandra-exporter</groupId>
+    <groupId>com.podile.cassandra-exporter</groupId>
     <artifactId>exporter-parent</artifactId>
-    <version>0.9.11-SNAPSHOT</version>
+    <version>0.9.10-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Cassandra Exporter Parent</name>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+
 
     <modules>
         <module>common</module>
@@ -30,18 +39,27 @@
     </properties>
 
     <scm>
-        <connection>scm:git:git://git@github.com:instaclustr/cassandra-exporter.git</connection>
-        <developerConnection>scm:git:ssh://github.com/instaclustr/cassandra-exporter.git</developerConnection>
-        <url>git://github.com/instaclustr/cassandra-exporter.git</url>
+        <connection>scm:git:git://git@github.com:podile/cassandra-exporter.git</connection>
+        <developerConnection>scm:git:ssh://github.com/podile/cassandra-exporter.git</developerConnection>
+        <url>git://github.com/podile/cassandra-exporter.git</url>
         <tag>HEAD</tag>
     </scm>
+
+    <developers>
+        <developer>
+            <name>Rohini Podile</name>
+            <email>podile@gmail.com</email>
+            <organization>Podile</organization>
+            <organizationUrl>https://github.com/podile/cassandra-exporter</organizationUrl>
+        </developer>
+    </developers>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.zegelin.cassandra-exporter</groupId>
+                <groupId>com.podile.cassandra-exporter</groupId>
                 <artifactId>common</artifactId>
-                <version>0.9.11-SNAPSHOT</version>
+                <version>0.9.10-SNAPSHOT</version>
                 <exclusions>
                     <exclusion>
                         <groupId>org.glassfish.hk2.external</groupId>
