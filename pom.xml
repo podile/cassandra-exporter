@@ -3,7 +3,7 @@
 
     <groupId>com.podile.cassandra-exporter</groupId>
     <artifactId>exporter-parent</artifactId>
-    <version>0.9.11</version>
+    <version>0.9.12-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Cassandra Exporter Parent</name>
@@ -42,7 +42,7 @@
         <connection>scm:git:git@github.com/podile/cassandra-exporter.git</connection>
         <developerConnection>scm:git:git@github.com:podile/cassandra-exporter.git</developerConnection>
         <url>git://github.com/podile/cassandra-exporter.git</url>
-        <tag>v0.9.11</tag>
+        <tag>release-0.9.11</tag>
     </scm>
 
     <developers>
