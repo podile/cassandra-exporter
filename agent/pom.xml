@@ -3,9 +3,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.podile.cassandra-exporter</groupId>
-        <artifactId>exporter-parent</artifactId>
-        <version>0.9.11-SNAPSHOT</version>
+        <groupId>io.github.podile</groupId>
+        <artifactId>cassandra-exporter-parent</artifactId>
+        <version>0.9.11</version>
     </parent>
 
     <artifactId>agent</artifactId>
@@ -15,9 +15,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.podile.cassandra-exporter</groupId>
-            <artifactId>common</artifactId>
-            <version>0.9.11-SNAPSHOT</version>
+            <groupId>io.github.podile</groupId>
+            <artifactId>cassandra-exporter-common</artifactId>
+            <version>0.9.11</version>
         </dependency>
 
         <dependency>

@@ -24,6 +24,8 @@ public class CassandraMetricsUtilities {
 
     /**
      * Given a Cassandra MetricMBean return the internal Codahale/Dropwizard Metric object
+     * @return Codahale/Dropwizard Metric
+     * @param <T> mBean
      */
     public static <T> NamedObject<T> metricForMBean(final NamedObject<?> mBean) {
         return mBean.map((name, object) -> {

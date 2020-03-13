@@ -26,6 +26,8 @@ public final class CollectorFunctions {
 
     /**
      * Collect a {@link JmxCounterMBean} as a Prometheus counter
+     * @param scaleFunction Scale function
+     * @return Collection function
      */
     public static CollectorFunction<JmxCounterMBean> counterAsCounter(final FloatFloatFunction scaleFunction) {
         return group -> {
@@ -42,6 +44,8 @@ public final class CollectorFunctions {
 
     /**
      * Collect a {@link JmxCounterMBean} as a Prometheus gauge
+     * @param scaleFunction Scale function
+     * @return Collection function
      */
     public static CollectorFunction<JmxCounterMBean> counterAsGauge(final FloatFloatFunction scaleFunction) {
         return group -> {
@@ -59,6 +63,8 @@ public final class CollectorFunctions {
 
     /**
      * Collect a {@link JmxMeterMBean} as a Prometheus counter
+     * @param scaleFunction Scale Function
+     * @return Collection function
      */
     public static CollectorFunction<JmxMeterMBean> meterAsCounter(final FloatFloatFunction scaleFunction) {
         return group -> {
@@ -90,6 +96,8 @@ public final class CollectorFunctions {
 
     /**
      * Collect a {@link JmxGaugeMBean} with a {@link Number} value as a Prometheus gauge
+     * @param scaleFunction Scale Function
+     * @return Collection Function
      */
     public static CollectorFunction<JmxGaugeMBean> numericGaugeAsGauge(final FloatFloatFunction scaleFunction) {
         return group -> {
@@ -106,6 +114,8 @@ public final class CollectorFunctions {
 
     /**
      * Collect a {@link JmxGaugeMBean} with a {@link Number} value as a Prometheus counter
+     * @param scaleFunction Scale Function
+     * @return Collection Function
      */
     public static CollectorFunction<JmxGaugeMBean> numericGaugeAsCounter(final FloatFloatFunction scaleFunction) {
         return group -> {
@@ -123,6 +133,8 @@ public final class CollectorFunctions {
 
     /**
      * Collect a {@link JmxGaugeMBean} with a Cassandra {@link EstimatedHistogram} value as a Prometheus summary
+     * @param bucketScaleFunction Bucket Scale Function
+     * @return Collection Function
      */
     public static CollectorFunction<JmxGaugeMBean> histogramGaugeAsSummary(final FloatFloatFunction bucketScaleFunction) {
         return group -> {
@@ -155,6 +167,8 @@ public final class CollectorFunctions {
 
     /**
      * Collect a {@link SamplingCounting} as a Prometheus summary
+     * @param quantileScaleFunction Quantile Scale Function
+     * @return Collection Function
      */
     protected static CollectorFunction<SamplingCounting> samplingAndCountingAsSummary(final FloatFloatFunction quantileScaleFunction) {
         return group -> {

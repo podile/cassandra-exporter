@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 public abstract class MBeanGroupMetricFamilyCollector {
     /**
-     * @return the name of the collector. Collectors with the same name will be merged together {@see merge}.
+     * @return the name of the collector. Collectors with the same name will be merged together.
      */
     public String name() {
         return this.getClass().getCanonicalName();
@@ -18,13 +18,14 @@ public abstract class MBeanGroupMetricFamilyCollector {
      * Merge two {@link MBeanGroupMetricFamilyCollector}s together.
      *
      * @param other The other {@link MBeanGroupMetricFamilyCollector} to merge with.
-     * @return a new {@link MBeanGroupMetricFamilyCollector} that is the combinator of this {@link MBeanGroupMetricFamilyCollector} and {@param other}
+     * @return a new {@link MBeanGroupMetricFamilyCollector} that is the combinator of this {@link MBeanGroupMetricFamilyCollector} and {@link MBeanGroupMetricFamilyCollector}
      */
     public MBeanGroupMetricFamilyCollector merge(final MBeanGroupMetricFamilyCollector other) {
         throw new IllegalStateException(String.format("Merging of %s and %s not implemented.", this, other));
     }
 
     /**
+     * @param mBeanName MBeanName
      * @return a new MBeanGroupMetricFamilyCollector with the named MBean removed, or null if the collector is empty.
      */
     public MBeanGroupMetricFamilyCollector removeMBean(final ObjectName mBeanName) {
@@ -42,6 +43,7 @@ public abstract class MBeanGroupMetricFamilyCollector {
          * Create a {@link MBeanGroupMetricFamilyCollector} for the given MBean, or null if this collector
          * doesn't support the given MBean.
          *
+         * @param mBean MBean
          * @return the MBeanGroupMetricFamilyCollector for the given MBean, or null
          */
         MBeanGroupMetricFamilyCollector createCollector(final NamedObject<?> mBean);
