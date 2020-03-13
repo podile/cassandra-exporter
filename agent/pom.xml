@@ -8,8 +8,8 @@
         <version>0.9.11</version>
     </parent>
 
-    <artifactId>agent</artifactId>
-    <version>0.9.11-SNAPSHOT</version>
+    <artifactId>cassandra-exporter-agent</artifactId>
+    <version>0.9.11</version>
 
     <name>Cassandra Exporter Agent</name>
 

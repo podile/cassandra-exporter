@@ -4,7 +4,7 @@
 
     <groupId>io.github.podile</groupId>
     <artifactId>cassandra-exporter-parent</artifactId>
-    <version>0.9.11</version>
+    <version>${cassandra.exporter.project.version}</version>
     <packaging>pom</packaging>
 
     <name>Cassandra Exporter Parent</name>
@@ -34,7 +34,6 @@
 
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-
         <outputDirectory>${project.build.directory}</outputDirectory>
     </properties>
 
@@ -57,9 +56,9 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.podile.cassandra-exporter</groupId>
-                <artifactId>common</artifactId>
-                <version>0.9.10-SNAPSHOT</version>
+                <groupId>io.github.podile</groupId>
+                <artifactId>cassandra-exporter-common</artifactId>
+                <version>${cassandra.exporter.project.version}</version>
                 <exclusions>
                     <exclusion>
                         <groupId>org.glassfish.hk2.external</groupId>
