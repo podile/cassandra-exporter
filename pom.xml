@@ -4,10 +4,13 @@
 
     <groupId>io.github.podile</groupId>
     <artifactId>cassandra-exporter-parent</artifactId>
-    <version>${cassandra.exporter.project.version}</version>
+    <version>0.9.11</version>
     <packaging>pom</packaging>
 
     <name>Cassandra Exporter Parent</name>
+	<description>A application used to extract cassandra metrics in Prometheus format</description>
+<url>https://github.com/podile/cassandra-exporter</url>
+
 
     <licenses>
         <license>
