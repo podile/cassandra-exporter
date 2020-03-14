@@ -57,6 +57,8 @@ public abstract class Harvester {
         @Override
         public abstract boolean equals(final Object obj);
 
+        public abstract String getName();
+
         public static Exclusion create(final String value) {
             try {
                 return new MBeanExclusion(ObjectName.getInstance(value));
@@ -92,6 +94,10 @@ public abstract class Harvester {
             final MBeanExclusion that = (MBeanExclusion) o;
             return Objects.equals(objectNameOrPattern, that.objectNameOrPattern);
         }
+
+        public String getName() {
+            return objectNameOrPattern.toString();
+        }
     }
 
     private static class CollectorExclusion extends Exclusion {
@@ -117,6 +123,10 @@ public abstract class Harvester {
             if (o == null || getClass() != o.getClass()) return false;
             final CollectorExclusion that = (CollectorExclusion) o;
             return Objects.equals(collectorName, that.collectorName);
+        }
+
+        public String getName() {
+            return collectorName;
         }
     }
 
@@ -149,7 +159,7 @@ public abstract class Harvester {
         this.collectorTimingEnabled = options.collectorTimingEnabled;
         this.excludedHistoQuantiles = options.excludedHistoQuantiles;
     }
-    
+
     public Set<Quantile> getExcludedHistoQuantiles() {
         return excludedHistoQuantiles;
     }
