@@ -5,11 +5,11 @@
     <parent>
         <groupId>io.github.podile</groupId>
         <artifactId>cassandra-exporter-parent</artifactId>
-        <version>0.9.11.2-SNAPSHOT</version>
+        <version>0.9.11.2</version>
     </parent>
 
     <artifactId>cassandra-exporter-standalone</artifactId>
-    <version>0.9.11.2-SNAPSHOT</version>
+    <version>0.9.11.2</version>
 
     <name>Cassandra Exporter Standalone/CLI</name>
 
@@ -25,7 +25,7 @@
         <dependency>
             <groupId>io.github.podile</groupId>
             <artifactId>cassandra-exporter-common</artifactId>
-            <version>0.9.11.2-SNAPSHOT</version>
+            <version>0.9.11.2</version>
         </dependency>
 
         <dependency>
