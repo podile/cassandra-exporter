@@ -4,7 +4,7 @@
 
     <groupId>io.github.podile</groupId>
     <artifactId>cassandra-exporter-parent</artifactId>
-    <version>0.9.11</version>
+    <version>0.9.11.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Cassandra Exporter Parent</name>

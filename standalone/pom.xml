@@ -5,18 +5,18 @@
     <parent>
         <groupId>io.github.podile</groupId>
         <artifactId>cassandra-exporter-parent</artifactId>
-        <version>0.9.11</version>
+        <version>0.9.11.2-SNAPSHOT</version>
     </parent>
 
     <artifactId>cassandra-exporter-standalone</artifactId>
-    <version>0.9.11</version>
+    <version>0.9.11.2-SNAPSHOT</version>
 
     <name>Cassandra Exporter Standalone/CLI</name>
 
     <properties>
         <version.guava>18.0</version.guava>
         <version.cassandra.datastax.driver.core>3.4.0</version.cassandra.datastax.driver.core>
-        <version.netty>4.1.44.Final</version.netty>
+        <version.netty>4.1.45.Final</version.netty>
         <version.logback.classic>1.2.3</version.logback.classic>
         <version.jul.to.slf4j>1.7.16</version.jul.to.slf4j>
     </properties>
@@ -25,7 +25,7 @@
         <dependency>
             <groupId>io.github.podile</groupId>
             <artifactId>cassandra-exporter-common</artifactId>
-            <version>0.9.11</version>
+            <version>0.9.11.2-SNAPSHOT</version>
         </dependency>
 
         <dependency>
@@ -65,7 +65,6 @@
             <version>${version.netty}</version>
         </dependency>
     </dependencies>
-<!--
     <build>
         <plugins>
             <plugin>
@@ -108,5 +107,4 @@
             </plugin>
         </plugins>
     </build>
-	-->
 </project>
