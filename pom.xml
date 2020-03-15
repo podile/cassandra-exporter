@@ -61,7 +61,7 @@
             <dependency>
                 <groupId>io.github.podile</groupId>
                 <artifactId>cassandra-exporter-common</artifactId>
-                <version>${cassandra.exporter.project.version}</version>
+                <version>0.9.11.2-SNAPSHOT</version>
                 <exclusions>
                     <exclusion>
                         <groupId>org.glassfish.hk2.external</groupId>
